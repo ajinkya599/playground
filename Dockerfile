@@ -1,2 +1,2 @@
-FROM redis:5.0.1
+FROM redis:3.0
 COPY . .

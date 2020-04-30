@@ -1,4 +1,4 @@
-name: 'Get Token'
+name: 'Get Token - 2'
 
 on:
   push:

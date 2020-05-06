@@ -16,6 +16,6 @@ jobs:
         docker build -f ${{ github.workspace }}/Dockerfile -t ajinkya599/scanrepo:beta-0.0 .
 
     - name: Container scan
-      uses: Azure/local-container-scan@releases/v0
+      uses: Azure/container-scan@releases/v0
       with:
         image-name: ajinkya599/scanrepo:beta-0.0

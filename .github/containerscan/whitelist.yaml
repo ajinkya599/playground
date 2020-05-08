@@ -25,10 +25,14 @@ general:
   - CVE-9999-876
   - CVE-1111-111
   - CVE-9999-876
+  - CVE-1111-111
+  - CVE-9999-876
   bestPracticeViolations:
   - CIS-DI-0001
   - CIS-DI-0008
   - DKL-LI-0003
+  - CIS-999-21
+  - CIS-999-54
   - CIS-999-21
   - CIS-999-54
   - CIS-999-21

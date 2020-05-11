@@ -1,2 +1,2 @@
-FROM desattiacr.azurecr.io/acr-task-test
+FROM dsmsacr.azurecr.io/baseimages/kubectl
 COPY . .

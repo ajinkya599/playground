@@ -3,7 +3,7 @@ name: PR
 on:
   pull_request:
     branches: 
-      - an-e2e-demo
+      - .
 
 jobs:
   build:

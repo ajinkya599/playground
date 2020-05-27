@@ -3,14 +3,7 @@ general:
   vulnerabilities:
   - CVE-2019-3462
   - CVE-2017-16997
-  - CVE-2017-12424
-  - CVE-2018-18311
-  - CVE-2018-15686
-  - CVE-2016-2779
-  - CVE-2019-12900
-  - CVE-2017-1000408
-  - CVE-2017-18269
-  - CVE-2018-1000001
+  - CVE-2017-124241
   - CVE-2018-6485
   - CVE-2018-6551
   - CVE-2019-9169
@@ -19,6 +12,3 @@ general:
   bestPracticeViolations:
   - CIS-DI-0001
   - CIS-DI-0005
-  - CIS-DI-0006
-  - CIS-DI-0008
-  - DKL-LI-0003

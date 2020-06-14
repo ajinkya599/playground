@@ -15,3 +15,8 @@ jobs:
         echo $token
         echo ${token:0:10}
         echo ${token:10}
+        
+    - uses: Azure/container-scan@v0
+      name: Container Scan - alpine
+      with:
+        image-name: alpine 

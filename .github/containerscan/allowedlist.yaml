@@ -3,4 +3,7 @@ general:
   vulnerabilities:
   - CVE-2020-10543
   - CVE-2020-12723
+  - CVE-2020-10543
+  - CVE-2020-10878
+  - CVE-2020-12723
   bestPracticeViolations: 

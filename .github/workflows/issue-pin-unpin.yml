@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    if: ${{ github.event.issue.nunber == 55 }}
+    if: ${{ github.event.issue.number == 55 }}
     name: Test
     runs-on: ubuntu-latest
     steps:

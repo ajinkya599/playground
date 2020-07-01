@@ -5,8 +5,7 @@ on:
 
 jobs:
   build:
-    #if: ${{ github.event.issue.id == '1' }}
-    name: AzPac
+    name: Test
     runs-on: ubuntu-latest
     - name: Run a multi-line script
       run: |

@@ -1,0 +1,14 @@
+name: Issue Pin/Unpin
+on:
+  issues:
+    types: [pinned, unpinned]
+
+jobs:
+  build:
+    #if: ${{ github.event.issue.id == '1' }}
+    name: AzPac
+    runs-on: ubuntu-latest
+    - name: Run a multi-line script
+      run: |
+        echo hello
+        echo ${{ github.event.issue.id }}

@@ -28,3 +28,4 @@ jobs:
         whitelist-from-branch: ${{ github.base_ref }}
       env:  
         CLAIR_OUTPUT : Low
+

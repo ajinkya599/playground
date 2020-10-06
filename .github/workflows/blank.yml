@@ -4,6 +4,9 @@ on:
   pull_request:
     branches: 
       - master
+  push:
+    branches: 
+      - gopinathch-patch-1
 
 jobs:
   build:

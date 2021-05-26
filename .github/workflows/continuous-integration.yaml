@@ -11,13 +11,16 @@ jobs:
     steps:
     - uses: actions/checkout@v1
         
-    - name: Docker build
-      run: |
-        docker build -f ${{ github.workspace }}/Dockerfile -t ajinkya599/scanrepo:alpha.1.0 .
+#     - name: Docker build
+#       run: |
+#         docker build -f ${{ github.workspace }}/Dockerfile -t ajinkya599/scanrepo:alpha.1.0 .
         
     - name: Container scan
       uses: Azure/container-scan@v0
       with:
         image-name: ubuntu
 
-
+    - name: Container scan
+      uses: Azure/container-scan@v0
+      with:
+        image-name: nginx:1.16.1

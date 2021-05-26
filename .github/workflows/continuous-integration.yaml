@@ -1,9 +1,16 @@
 name: CI
 
 on:
-  push:
-    branches: 
-      - master1
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Person to greet'
+        required: true
+        default: 'Mona the Octocat'
+      home:
+        description: 'location'
+        required: false
+        default: 'The Octoverse'
 
 jobs:
   build:
@@ -11,14 +18,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
         
-    - name: Docker build
-      run: |
-        docker build -f ${{ github.workspace }}/Dockerfile -t ajinkya599/scanrepo:alpha.1.0 .
-        
-    - name: Container scan
-      uses: shigupt202/local-container-scan@users/aj/proxyCheckRunCreation
-      with:
-        image-name: ajinkya599/scanrepo:alpha.1.0
-        severity-threshold: hiGh
-
-
+    - run: |
+        echo "Hello ${{ github.event.inputs.name }}!"
+        echo "- in ${{ github.event.inputs.home }}!"

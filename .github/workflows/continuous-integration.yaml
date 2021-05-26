@@ -16,11 +16,11 @@ jobs:
 #         docker build -f ${{ github.workspace }}/Dockerfile -t ajinkya599/scanrepo:alpha.1.0 .
         
     - name: Container scan
-      uses: Azure/container-scan@v0
+      uses: Azure/container-scan@jldeen-main-to-releases-v0
       with:
         image-name: ubuntu
 
     - name: Container scan
-      uses: Azure/container-scan@v0
+      uses: Azure/container-scan@jldeen-main-to-releases-v0
       with:
         image-name: nginx:1.16.1

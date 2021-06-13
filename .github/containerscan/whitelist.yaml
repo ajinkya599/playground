@@ -6,3 +6,11 @@ general:
   - CVE-2017-16997
   bestPracticeVulnerabilities:
   - CIS-DI-0005
+  vulnerabilities:
+  - CVE-2019-14697
+  bestPracticeViolations:
+  - DKL-DI-0004
+  - CIS-DI-0001
+  - CIS-DI-0005
+  - CIS-DI-0006
+  - DKL-LI-0003

@@ -1,2 +1,2 @@
-FROM redis:5.0.1
+FROM clitools/kubectl
 COPY . .

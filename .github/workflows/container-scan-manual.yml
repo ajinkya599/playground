@@ -9,7 +9,7 @@ jobs:
     steps:        
     - name: Docker login
       run: |
-        docker login -u {{ secrets.SHIGUPT_ACR_USERNAME }} -p {{ secrets.SHIGUPT_ACR_PASSWORD }}
+        docker login shiguptacr.azurecr.io -u {{ secrets.SHIGUPT_ACR_USERNAME }} -p {{ secrets.SHIGUPT_ACR_PASSWORD }}
         
     - name: Container scan - shiguptacr.azurecr.io/ascdemo:eca0572326b3a8bb4423c8ab2482d1e9f59df6c3
       uses: azure/container-scan@v0

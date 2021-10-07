@@ -24,7 +24,20 @@ jobs:
 #         image-name: shiguptacr.azurecr.io/ascdemo:eca0572326b3a8bb4423c8ab2482d1e9f59df6c3
 
     - name: Container scan - nginx:stable
-      uses: azure/container-scan@ajinkya599/fix-trivy-json
+      uses: azure/container-scan@releases/v0
+      continue-on-error: true
+      with:
+        image-name: nginx:stable
+        
+    - name: Container scan - nginx:stable
+      uses: azure/container-scan@v0
+      continue-on-error: true
+      with:
+        image-name: nginx:stable
+        
+    - name: Container scan - nginx:stable
+      uses: azure/container-scan@v0.1
+      continue-on-error: true
       with:
         image-name: nginx:stable
         
